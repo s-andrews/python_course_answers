@@ -21,13 +21,25 @@ numeric_values.append(float(input("Number 5: ")))
 
 numeric_values.sort()
 
-# Finally we can print them out
+# Now we can print them out
 print("\nSorted Values\n=============")
 print("Value 1:",numeric_values[0])
 print("Value 2:",numeric_values[1])
 print("Value 3:",numeric_values[2])
 print("Value 4:",numeric_values[3])
 print("Value 5:",numeric_values[4])
+
+# We can to the same thing going the other way
+
+numeric_values.reverse()
+print("\nReversed Values\n===============")
+print("Value 1:",numeric_values[0])
+print("Value 2:",numeric_values[1])
+print("Value 3:",numeric_values[2])
+print("Value 4:",numeric_values[3])
+print("Value 5:",numeric_values[4])
+
+
 
 # We also want to know how many times the
 # number 2 was entered
