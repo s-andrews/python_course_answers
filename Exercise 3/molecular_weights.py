@@ -1,7 +1,8 @@
 #!python
 
 # Start by building the data structure of amino
-# acid properties
+# acid properties.  This is just taken from what
+# we did in exercise 2
 
 amino_acids = {}
 amino_acids["A"] = {"name":"Alanine",       "weight":89.1}
@@ -28,14 +29,18 @@ amino_acids["V"] = {"name":"Valine",        "weight":117.1}
 # Make up a list of the amino acids we want to measure
 # technically we don't need to do this as we can treat
 # the string as a list of letters and it will work, but
-# you haven't seen that yet.
+# you haven't seen that yet :-)
 
 peptide = ['T','E','N','K','Y','S','Q','L','D','E','E','Q','P']
 
 # Now calculate the weight
 total_weight = 0
 
+# Iterate through the amino acids
 for aa in peptide:
+    # The += is a shortcut when you're adding a value
+    # to an existing value.  It works for any mathematical
+    # operator (eg -= *= /=)
     total_weight += amino_acids[aa]["weight"]
 
 
