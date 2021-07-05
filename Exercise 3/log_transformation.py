@@ -36,14 +36,9 @@ log_data = []
 
 # Iterate through the top level
 for x in range(10):
+    log_data.append([])
     # Iterate through the second level
     for y in range(10):
-        # If we're at the start of a new row we need to 
-        # add an empty list to the log transformed data
-        # so that we can then append data to it.
-        if y==0:
-            log_data.append([])
-
         log_data[x].append(round(math.log(linear_data[x][y]),1))
 
 # Now print out the result. 
